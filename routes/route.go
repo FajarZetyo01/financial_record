@@ -22,7 +22,7 @@ func Route(db *sql.DB, mux *http.ServeMux) {
 	mux.HandleFunc("/financial/delete_financial_record", helpers.AuthOnly(financialController.DeleteFinancialRecord))
 	mux.HandleFunc("/financial/download_financial_record", helpers.AuthOnly(financialController.DownloadFinancialRecord))
 
-	//PROFILE
+	//PROFILE CONTROLLER
 	userController := controllers.NewUserController(db)
 	mux.HandleFunc("/profile", helpers.AuthOnly(userController.Profile))
 
