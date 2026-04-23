@@ -14,5 +14,5 @@ func InitSession() {
 	SessionManager.Cookie.Name = "financial_record_jan"
 	SessionManager.Cookie.Path = "/"
 	SessionManager.Cookie.HttpOnly = true
-	SessionManager.Cookie.Secure = true
+	SessionManager.Cookie.Secure = false
 }
